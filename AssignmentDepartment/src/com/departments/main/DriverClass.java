@@ -1,0 +1,43 @@
+package com.departments.main;
+
+import com.departments.model.*;
+
+public class DriverClass {
+
+	public static void main(String[] args) {
+
+		SuperDepartment obj = new SuperDepartment();
+
+		System.out.println(obj.departmentName());
+		System.out.println(obj.getTodaysWork());
+		System.out.println(obj.getWorkDeadline());
+		System.out.println(obj.isTodayAHoliday());
+
+		System.out.println(" ");
+
+		AdminDepartment obj1 = new AdminDepartment();
+		System.out.println(obj1.departmentName());
+		System.out.println(obj1.getTodaysWork());
+		System.out.println(obj1.getWorkDeadline());
+		System.out.println(obj1.isTodayAHoliday());
+
+		System.out.println(" ");
+
+		HrDepartment obj2 = new HrDepartment();
+		System.out.println(obj2.departmentName());
+		System.out.println(obj2.getTodaysWork());
+		System.out.println(obj2.getWorkDeadline());
+		System.out.println(obj2.doActivity());
+		System.out.println(obj2.isTodayAHoliday());
+
+		System.out.println(" ");
+
+		TechDepartment obj3 = new TechDepartment();
+		System.out.println(obj3.departmentName());
+		System.out.println(obj3.getTodaysWork());
+		System.out.println(obj3.getWorkDeadline());
+		System.out.println(obj3.getTechStackInformation());
+		System.out.println(obj3.isTodayAHoliday());
+	}
+
+}
